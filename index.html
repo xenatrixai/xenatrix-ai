@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xenatrix AI | Automation & AI Systems</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/2.ico" sizes="48x48">
+    <link rel="icon" type="image/png" href="assets/images/logo_2.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="assets/images/logo_2.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-theme="dark">
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="preloader-logo-wrapper">
+            <img src="assets/images/logo_2.png" class="preloader-logo-img" alt="Xenatrix AI Logo">
+            <div class="preloader-logo-ring"></div>
+        </div>
+        <div class="preloader-text" id="preloader-text"></div>
+    </div>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="custom-cursor-dot"></div>
+    <div class="custom-cursor-ring"></div>
+
+    <!-- SCROLL PROGRESS -->
+    <div id="scroll-progress"></div>
+    <div class="global-bg-animation"></div>
+
+    <!-- 1. NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <img src="assets/images/logo_2.png" alt="Xenatrix AI Logo">
+        </div>
+
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#featured" class="nav-link">Projects</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#process" class="nav-link">Process</a></li>
+            <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Mobile Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 2. HERO -->
+    <section class="hero" id="home">
+        <div class="hero-mesh"></div>
+        <div class="hero-pattern"></div>
+        <canvas id="hero-canvas"></canvas>
+
+        <div class="container reveal-up">
+            <div class="hero-availability">
+                <span class="pulse-dot"></span> Available for Projects
+            </div>
+
+
+            <h1 class="hero-title" id="hero-headline">I Build Systems That Run Your Business</h1>
+
+            <div class="hero-typing-container">
+                <span id="hero-typing"></span>
+            </div>
+
+            <p class="hero-subtitle">
+                Automation workflows, AI tools, and web systems that eliminate manual work and scale your operations
+            </p>
+
+            <div class="hero-cta">
+                <a href="#featured" class="btn btn-primary">View My Work <i
+                        class="fa-solid fa-arrow-right right"></i></a>
+                <a href="https://wa.me/917010233809" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Me Now
+                </a>
+                <button class="btn-demo-trigger" id="hero-demo-btn" onclick="openTerminalDemo()">
+                    <span class="demo-dot"></span> Experience Automation Live →
+                </button>
+            </div>
+
+            <div class="hero-stats-separator"></div>
+
+            <div class="hero-stats">
+                <div class="stat-item reveal-up">
+                    <div class="stat-number-wrapper">
+                        <span class="stat-number" data-target="9">0</span><span class="stat-symbol">+</span>
+                    </div>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+
+                <div class="stat-item reveal-up" style="transition-delay: 0.1s;">
+                    <div class="stat-number-wrapper">
+                        <span class="stat-number" data-target="10">0</span><span class="stat-symbol">+</span>
+                    </div>
+                    <span class="stat-label">Live Automations</span>
+                </div>
+
+                <div class="stat-item reveal-up" style="transition-delay: 0.2s;">
+                    <div class="stat-number-wrapper">
+                        <span class="pulse-dot"></span>
+                        <span class="stat-number" data-target="2">0</span>
+                    </div>
+                    <span class="stat-label">Active Clients</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- 3. FEATURED PROJECT (TIKKA HOUSE) -->
+    <section class="featured-project" id="featured">
+        <div class="container">
+            <div class="fp-header reveal-up">
+                <div class="section-badge">Featured Project</div>
+                <h2>Complete AI Automation & Restaurant Management System</h2>
+                <p class="section-subtitle">A multi-automation n8n workflow + custom admin dashboard built to run a
+                    restaurant without manual operations.</p>
+            </div>
+            <div class="fp-layout">
+                <!-- LEFT SIDE: MEDIA SHOWCASE -->
+                <div class="fp-media-showcase reveal-up">
+
+                    <!-- 1. Video Player -->
+                    <div class="bento-card bento-video tilt-element">
+                        <div class="bento-header">
+                            <span class="pulse-dot"></span> Live Operations Dashboard
+                        </div>
+                        <div class="video-container">
+                            <video src="assets/images/Tikka House Web Video final.mp4" class="fp-video" controls
+                                playsinline></video>
+                        </div>
+                    </div>
+
+                    <!-- 2. Audio Player -->
+                    <div class="bento-card bento-audio tilt-element">
+                        <div class="audio-player-wrapper">
+                            <div class="audio-main-controls">
+                                <button class="audio-skip-btn" id="ai-audio-back" aria-label="Skip Backward 10s">
+                                    <i class="fa-solid fa-backward-step"></i>
+                                </button>
+                                <button class="custom-play-btn" id="ai-audio-btn" aria-label="Play/Pause AI Call">
+                                    <i class="fa-solid fa-play" id="ai-audio-icon"></i>
+                                </button>
+                                <button class="audio-skip-btn" id="ai-audio-forward" aria-label="Skip Forward 10s">
+                                    <i class="fa-solid fa-forward-step"></i>
+                                </button>
+                            </div>
+
+                            <div class="audio-progress-container">
+                                <div class="audio-progress-bar" id="ai-audio-progress"></div>
+                            </div>
+
+                            <div class="audio-visualizer paused" id="ai-audio-viz">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+
+                        <div class="fp-audio-content">
+                            <h4><i class="fa-solid fa-tower-broadcast"></i> AI Voice Booking</h4>
+                            <p>Real-time intent detection.</p>
+                            <audio id="ai-audio-player" class="hidden-audio">
+                                <source src="assets/images/Tikka House Web Final Audio.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+
+                    <!-- 3. Screenshots (High Visibility Highlights) -->
+                    <div class="fp-screenshot-grid">
+                        <div class="fp-screen highlight-customer tilt-element">
+                            <div class="screen-badge">Real-time</div>
+                            <img src="assets/images/intimation%20to%20customer%20.jpeg" alt="Customer Alert"
+                                class="expandable-img">
+                            <span class="screen-label">CUSTOMER ALERT</span>
+                        </div>
+                        <div class="fp-screen highlight-manager tilt-element">
+                            <div class="screen-badge">Real-time</div>
+                            <img src="assets/images/intimation%20to%20manager%20.jpeg" alt="Manager Alert"
+                                class="expandable-img">
+                            <span class="screen-label">MANAGER ALERT</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE: CONTENT -->
+                <div class="fp-content-side reveal-up">
+                    <div class="fp-summary">
+                        <h3 class="gradient-text">The Project</h3>
+                        <p>A full-scale AI ecosystem built with <strong>n8n</strong> and <strong>Django</strong> that
+                            automates restaurant operations—from intelligent voice bookings to real-time management
+                            dashboard, eliminating manual coordination entirely.</p>
+                    </div>
+
+                    <div class="fp-info-block">
+                        <h4>Key Benefits</h4>
+                        <ul class="fp-benefit-list">
+                            <li><i class="fa-solid fa-bolt-lightning"></i> <span><strong>24/7 Intelligent
+                                        Booking:</strong> No human receptionist needed for calls.</span></li>
+                            <li><i class="fa-solid fa-clock-rotate-left"></i> <span><strong>Reduced Staff
+                                        Workload:</strong> Automated WhatsApp & Email notifications.</span></li>
+                            <li><i class="fa-solid fa-shield-halved"></i> <span><strong>Zero Missed Orders:</strong>
+                                    Centralized real-time tracking system.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="fp-outcomes">
+                        <h4>Project Outcomes</h4>
+                        <div class="fp-outcome-grid">
+                            <div class="fp-outcome-card">
+                                <span class="stat-number" data-target="100">0</span><span class="suffix">%</span>
+                                <p>Automated Queries</p>
+                            </div>
+                            <div class="fp-outcome-card">
+                                <span class="stat-number" data-target="10">0</span><span class="suffix">+</span>
+                                <p>Live Workflows</p>
+                            </div>
+                            <div class="fp-outcome-card">
+                                <span class="stat-number" data-target="24">0</span><span class="suffix">/7</span>
+                                <p>Up-time</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fp-tech-row">
+                        <span>n8n</span><span>Django</span><span>Exotel</span><span>Millis
+                            AI</span><span>PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- 4. ALL PROJECTS (BENTO MOSAIC) -->
+    <section class="section bento-portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="portfolio-header">
+                <div class="section-badge">Portfolio</div>
+                <h2 class="bento-heading" id="bento-heading">
+                    Current Projects & <span class="gradient-text">Live Demos</span>
+                </h2>
+                <p class="bento-subheading reveal-up">Every project is a live system. Built to perform. Deployed to
+                    last.</p>
+            </div>
+
+            <div class="bento-grid" id="bento-grid">
+                <!-- PROJECT 1: TNBUY (Medium) -->
+                <div class="bento-card-project size-medium project-tnbuy bento-reveal">
+
+                    <div class="bento-image-wrapper">
+                        <img src="assets/images/tnbuy.png" alt="TNBuy eCommerce" class="bento-img parallax-img"
+                            onerror="this.src=''; this.className='bento-img parallax-img placeholder-blue';">
+                        <div class="bento-img-overlay"></div>
+                    </div>
+
+                    <div class="bento-content">
+                        <div class="bento-header-row">
+                            <div class="bento-badge badge-blue">WEBSITE</div>
+                        </div>
+                        <h3 class="bento-title">Full-Scale eCommerce Platform</h3>
+
+
+                        <p class="bento-hook">A complete retail engine. Browse, cart, checkout — production-ready from
+                            day one.</p>
+                        <p class="bento-desc">Built with PrestaShop, TNBuy powers a multi-product retail business with
+                            full catalogue management, payment integration, and a seamless shopping experience. It
+                            features robust inventory tracking, secure payment gateways, responsive mobile design, and
+                            automated invoice generation to streamline operations.</p>
+
+                        <div class="bento-tags">
+                            <span>PrestaShop</span><span>PHP</span><span>MySQL</span>
+                        </div>
+                        <div class="bento-cta-row">
+                            <a href="https://tnbuy.in/presta/en/" target="_blank" class="bento-cta">Live Site ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2: MAASGROUPS (Medium) -->
+                <div class="bento-card-project size-medium project-maasgroups bento-reveal">
+                    <div class="bento-image-wrapper">
+                        <img src="assets/images/maasgroups.png" alt="MaasGroups Corporate Site"
+                            class="bento-img parallax-img"
+                            onerror="this.src=''; this.className='bento-img parallax-img placeholder-purple';">
+                        <div class="bento-img-overlay"></div>
+                    </div>
+                    <div class="bento-content">
+                        <div class="bento-header-row">
+                            <div class="bento-badge badge-purple">WEBSITE</div>
+                        </div>
+                        <h3 class="bento-title">Corporate Identity Online</h3>
+
+
+                        <p class="bento-hook">When a company's first impression is a website, every pixel matters.</p>
+                        <p class="bento-desc">Professional corporate portfolio built with WordPress — showcasing
+                            services, team, and brand story with a structured, conversion-focused layout. It includes
+                            tailored SEO optimization, dynamic contact forms, high-performance caching, and a custom
+                            admin dashboard for easy content management.</p>
+
+                        <div class="bento-tags">
+                            <span>WordPress</span><span>CSS</span><span>PHP</span>
+                        </div>
+                        <div class="bento-cta-row">
+                            <a href="https://maasgroups.in" target="_blank" class="bento-cta">Live Site ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3: CARVANGALAM (Large) -->
+                <div class="bento-card-project size-large project-carvangalam bento-reveal">
+
+                    <div class="bento-image-wrapper">
+                        <div class="bento-floating-badge">EMI Calculator</div>
+                        <img src="assets/images/carvangalam.png" alt="CarVangalam Marketplace"
+                            class="bento-img parallax-img"
+                            onerror="this.src=''; this.className='bento-img parallax-img placeholder-cyan';">
+                        <div class="bento-img-overlay"></div>
+                    </div>
+                    <div class="bento-content">
+                        <div class="bento-header-row">
+                            <div class="bento-badge badge-cyan">WEB APP</div>
+                        </div>
+                        <h3 class="bento-title">Automotive Marketplace</h3>
+
+
+                        <p class="bento-hook">Buy a car. Sell a car. Calculate your loan. All in one place.</p>
+                        <p class="bento-desc">A full-featured automotive marketplace where dealers can list vehicles,
+                            buyers can browse and enquire, and a built-in loan EMI calculator removes every friction
+                            point from the purchase journey. Integrated with secure authentication, multi-criteria
+                            filtering, and an intelligent recommendation engine, it serves as a comprehensive hub for
+                            end-to-end vehicle transactions.</p>
+
+                        <div class="bento-muted-block">
+                            <h5><i class="fa-solid fa-calculator"></i> Built-in EMI Calculator Engine</h5>
+                            <p>Real-time payment estimation with dynamic variables (Price, Interest, Period, Down
+                                Payment). Example computation:</p>
+                            <div class="muted-stats-grid">
+                                <div class="stat-item"><span>Price</span><strong>₹350,000</strong></div>
+                                <div class="stat-item"><span>Interest</span><strong>1%</strong></div>
+                                <div class="stat-item"><span>Period</span><strong>36 mo</strong></div>
+                                <div class="stat-item"><span>Down Pmt</span><strong>₹50,300</strong></div>
+                            </div>
+                            <div class="muted-results-row">
+                                <div class="result-item"><span>Monthly</span><strong>₹8,453.97</strong></div>
+                                <div class="result-item"><span>Total Interest</span><strong>₹4,642.83</strong></div>
+                                <div class="result-item"><span>Total Pmt</span><strong>₹354,642.83</strong></div>
+                            </div>
+                        </div>
+
+                        <div class="bento-tags">
+                            <span>WordPress</span><span>Laravel</span><span>JavaScript</span><span>MySQL</span>
+                        </div>
+
+                        <div class="bento-cta-row">
+                            <a href="https://carvangalam.in" target="_blank" class="bento-cta">Live Site ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4: TNHAPPYKIDS (Large - Hero Glow) -->
+                <div class="bento-card-project size-large project-tnhappykids hero-glow bento-reveal">
+                    <div class="bento-image-wrapper bento-slider">
+                        <div class="slider-track">
+                            <img src="assets/images/tnhappykis%20home%20.png" alt="TNHappyKids Home"
+                                class="bento-img parallax-img slide-1">
+                            <img src="assets/images/student%20iden.png" alt="TNHappyKids ID"
+                                class="bento-img parallax-img slide-2">
+                            <img src="assets/images/sisys.png" alt="TNHappyKids System"
+                                class="bento-img parallax-img slide-3">
+                        </div>
+                        <div class="scroll-fade-left"></div>
+                        <div class="scroll-fade-right"></div>
+                    </div>
+
+                    <div class="bento-content">
+                        <div class="bento-header-row">
+                            <div class="bento-badge badge-green">SYSTEM</div>
+                        </div>
+                        <h3 class="bento-title">Complete School Management Ecosystem</h3>
+
+
+                        <p class="bento-hook">From attendance to identity — an entire school runs on this.</p>
+                        <p class="bento-desc">A multi-module school management platform covering: real-time student
+                            attendance (daily/monthly/yearly reports), QR-based student identity card generation, in/out
+                            tracking system with downloadable reports. The system provides role-based access for
+                            administrators, teachers, and parents, ensuring secure, transparent, and instantaneous
+                            communication across the entire educational ecosystem.</p>
+
+                        <div class="bento-tags">
+                            <span>Laravel</span><span>JavaScript</span><span>HTML/CSS</span><span>MySQL</span>
+                        </div>
+                        <div class="bento-cta-row bento-modules-row">
+                            <a href="https://tnhappykids.in" target="_blank" class="bento-mini-pill">🏫 School Site
+                                ↗</a>
+                            <a href="https://students.tnhappykids.in" target="_blank" class="bento-mini-pill">🎓
+                                Student Portal ↗</a>
+                            <a href="https://students.tnhappykids.in/student-int" target="_blank"
+                                class="bento-mini-pill">🪪 ID System ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4.5: TNHAPPYKIDS PUBLIC SITE (Medium) -->
+                <div class="bento-card-project size-medium project-tnhappykids-public bento-reveal">
+                    <div class="bento-image-wrapper">
+                        <img src="assets/images/tnhp.png" alt="TNHappyKids Public Website"
+                            class="bento-img parallax-img"
+                            onerror="this.src=''; this.className='bento-img parallax-img placeholder-green';">
+                        <div class="bento-img-overlay"></div>
+                    </div>
+                    <div class="bento-content">
+                        <div class="bento-header-row">
+                            <div class="bento-badge badge-green">WEBSITE</div>
+                        </div>
+                        <h3 class="bento-title">Public School Website</h3>
+                        <p class="bento-hook">A complete school website with all needed specifications.</p>
+                        <p class="bento-desc">Fully featured public-facing website for TNHappyKids, equipped with
+                            galleries, blogs, admissions info, and seamlessly linked to the core management ecosystem.
+                            Designed with high-conversion landing pages, interactive event calendars, and blazing-fast
+                            load times to maximize parental engagement and streamline the enrollment process.</p>
+
+                        <div class="bento-tags">
+                            <span>WordPress</span><span>PHP</span>
+                        </div>
+                        <div class="bento-cta-row">
+                            <a href="https://tnhappykids.in/" target="_blank" class="bento-cta">Live Site ↗</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PROJECT 5: RESTAURANT AUTOMATION (Medium) -->
+
+                <div class="bento-card-project size-medium project-restaurant bento-reveal">
+                    <div class="bento-image-wrapper">
+                        <img src="assets/images/n8n%20restaurent%20workflow%20.png" alt="Restaurant OS Workflow"
+                            class="bento-img parallax-img"
+                            onerror="this.src=''; this.className='bento-img parallax-img placeholder-orange';">
+
+
+                        <div class="bento-img-overlay"></div>
+                    </div>
+                    <div class="bento-content">
+                        <div class="bento-header-row">
+                            <div class="bento-badge badge-orange">AUTOMATION</div>
+                        </div>
+                        <h3 class="bento-title">AI-Powered Restaurant OS</h3>
+
+
+                        <p class="bento-hook">Orders, staff, catering â€” automated from kitchen to close.</p>
+                        <p class="bento-desc">Full restaurant management system with n8n automation backbone. Handles
+                            order tracking, staff scheduling, catering management, role-based access, and real-time
+                            admin dashboard. The platform integrates directly with kitchen display systems, automates
+                            daily sales reporting via email, and significantly reduces manual administrative overhead.
+                        </p>
+
+                        <div class="bento-tags">
+                            <span>Laravel</span><span>Node.js</span><span>n8n</span><span>JavaScript</span>
+                        </div>
+                        <div class="bento-cta-row">
+                            <a href="#featured" class="bento-cta smooth-scroll">View Featured Project →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 6: CONSTRUCTION COMPANY SITE (Medium) -->
+                <div class="bento-card-project size-medium project-construction bento-reveal">
+                    <div class="bento-image-wrapper bento-video-wrapper">
+                        <video class="bento-video" controls preload="metadata"
+                            style="height: 100%; width: 100%; object-fit: cover; border-radius: 20px 20px 0 0;">
+                            <source src="assets/images/construction%20site%20.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="bento-content">
+                        <div class="bento-header-row">
+                            <div class="bento-badge badge-amber">WEBSITE</div>
+                        </div>
+                        <h3 class="bento-title">Construction with Smart Cost Intelligence</h3>
+
+                        <p class="bento-hook">A construction company website that calculates before it builds.</p>
+                        <p class="bento-desc">Corporate website for a construction firm featuring a built-in material
+                            and project cost calculator â€” letting clients estimate build costs before ever picking up
+                            the phone. It seamlessly integrates a headless CMS for dynamic portfolio updates, advanced
+                            SEO structuring, and automated lead routing to ensure sales teams connect with high-intent
+                            clients immediately.</p>
+
+                        <div class="bento-tags">
+                            <span>Django</span><span>Python</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 7: N8N AUTOMATION WORKFLOWS (Large - Hero Glow) -->
+                <div class="bento-card-project size-large project-n8n-workflows hero-glow bento-reveal">
+                    <div class="bento-content bento-content-top">
+                        <div class="bento-header-row">
+                            <div class="bento-badge badge-purple-gradient">AUTOMATION</div>
+                        </div>
+                        <h3 class="bento-title">Intelligent Automation Systems</h3>
+
+                        <p class="bento-hook">Voice bots that answer. Calendars that book. n8n does the work.</p>
+                        <p class="bento-desc">Production n8n workflows deployed for real clients â€” from AI voice
+                            pipelines to zero-touch appointment engines.</p>
+                    </div>
+                    <div class="bento-sub-cards">
+                        <div class="bento-sub-card">
+                            <img src="assets/images/tts-stt%20dark%20theme.png" alt="AI VoiceBot Pipeline"
+                                class="bento-img" onerror="this.src=''; this.className='bento-img placeholder-purple';">
+
+                            <div class="bento-sub-card-content">
+                                <h4>AI VoiceBot Pipeline</h4>
+                                <div class="bento-tags"><span>n8n</span><span>Exotel</span><span>Google
+                                        Cloud</span><span>TTS/STT</span></div>
+                            </div>
+                        </div>
+                        <div class="bento-flowing-dots">
+                            <div class="dot-path"></div>
+                            <div class="traveling-dot"></div>
+                        </div>
+                        <div class="bento-sub-card">
+                            <img src="assets/images/calender%20bookin%20dark%20theme%20.png"
+                                alt="Smart Calendar Booking" class="bento-img"
+                                onerror="this.src=''; this.className='bento-img placeholder-cyan';">
+
+                            <div class="bento-sub-card-content">
+                                <h4>Smart Calendar Booking</h4>
+                                <div class="bento-tags"><span>n8n</span><span>Milis AI</span><span>Google
+                                        Calendar</span><span>Gmail</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GHOST CARD -->
+                <div class="bento-card-project project-ghost bento-reveal">
+                    <i class="fa-solid fa-shield-halved lock-icon"></i>
+                    <div class="ghost-content">
+                        <h3>12+ Confidential Projects</h3>
+                        <p>Enterprise systems & internal tools under NDA. Delivering scalable software solutions across
+                            commercial laundry, cinema networks, EV battery manufacturing, and beyond.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento-footer-cta reveal-up">
+                <p>Have a project in mind?</p>
+                <a href="#contact" class="bento-premium-btn">Book a Free Strategy Call →</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- 5. MY STORY -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header reveal-up" style="text-align: center; margin-bottom: 60px;">
+                <h2 class="section-title">My <span class="gradient-text">Story</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-photo-wrapper reveal-up">
+                    <div class="photo-container">
+                        <div class="about-photo-glow"></div>
+                        <img src="assets/images/balaji.devs.png" alt="Balaji S - Xenatrix AI" class="about-photo">
+                    </div>
+                    <div class="photo-badge">
+                        <span class="degree">BE.CSE</span>
+                        <span class="separator">|</span>
+                        <span class="role">AI Automation Engineer & Full Stack Developer</span>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="about-socials">
+                        <a href="https://www.linkedin.com/in/balaji-satheesh-kumar-982341284" target="_blank"
+                            class="social-btn linkedin" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/xenatrix_ai?igsh=MXM0eHk1MGdqNnFudg==" target="_blank"
+                            class="social-btn instagram" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="mailto:xenatrixai@gmail.com" class="social-btn gmail" aria-label="Gmail">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="story-content reveal-up">
+                    <h3>From Writing Code to Building Intelligent Systems</h3>
+
+                    <p>I'm Balaji S — a Full Stack Developer and AI Automation Engineer based in Tiruppur, Tamil Nadu.
+                        I
+                        graduated with a BE in Computer Science and started my career building real production websites.
+                    </p>
+
+                    <p>What changed everything was when I discovered n8n and workflow automation. I realized the future
+                        wasn't just building websites — it was building systems that work autonomously. Systems that
+                        handle customer calls at 2AM, book tables without a receptionist, send follow-up emails without
+                        human intervention.</p>
+
+                    <p>Today, I build end-to-end business automation: AI voice bots via Exotel and Millis AI, 400+ node
+                        n8n workflows, Node.js dashboards, and Django backends. Every project I ship solves a real
+                        operational problem.</p>
+
+                    <div class="quote-block">
+                        I don't just build websites. I build the engine that runs the business behind it.
+                    </div>
+                </div>
+            </div>
+
+            <div class="why-different-grid reveal-up">
+                <div class="diff-card">
+                    <h4>Production-First</h4>
+                    <p>Every project I build is live, tested, and deployed — not just a tutorial or demo.</p>
+                </div>
+                <div class="diff-card">
+                    <h4>Full-Stack + Automation</h4>
+                    <p>I combine web development, backend systems, and AI automation in a single delivery.</p>
+                </div>
+                <div class="diff-card">
+                    <h4>Real Business Outcomes</h4>
+                    <p>My automation systems have reduced manual workload, improved response times, and centralized
+                        operations.</p>
+                </div>
+                <div class="diff-card">
+                    <h4>End-to-End Ownership</h4>
+                    <p>From domain setup to deployment to automation — I handle the full stack.</p>
+                </div>
+            </div>
+
+            <div class="tech-stack-section reveal-up" id="tech-stack-section">
+                <div class="section-header" style="text-align: center;">
+                    <div class="section-badge">Tech Stack & Capabilities</div>
+                    <h2 class="section-title" id="tech-heading">Unlock The <span class="gradient-text">Tech Vault</span>
+                    </h2>
+                </div>
+
+                <div class="tech-vault-container" id="tech-vault-container">
+                    <!-- Stage 1: The Interactive Area -->
+                    <div class="vault-interaction-area" id="vault-area">
+                        <div class="tech-bag" id="tech-bag">
+                            <i class="fa-solid fa-briefcase bag-icon"></i>
+                            <i class="fa-solid fa-circle-notch lock-icon-small"></i>
+                        </div>
+
+                        <div class="tech-key-container" id="key-container">
+                            <p class="drag-instruction">Drag tool to unlock</p>
+                            <div class="tech-key" id="tech-key" draggable="true">
+                                <i class="fa-solid fa-wrench"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 2: Fluid Center & Typewriter -->
+                    <div class="fluid-skills-cluster" id="fluid-skills">
+                        <div class="typewriter-container">
+                            <span class="typewriter-text" id="typewriter-text"></span><span class="cursor">|</span>
+                        </div>
+                        <!-- We add all SVGs as fluid nodes -->
+                        <div class="fluid-nodes-wrapper" id="fluid-nodes-wrapper">
+                            <div class="fluid-node"><img src="assets/images/python-5.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/django.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/laravel-2.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/php-6.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/nodejs-1.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/mysql-logo-pure.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/n8n%20logo.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/make.com.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/exotel.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/millis%20ai.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/eleven%20labs.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/webhooks.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/html-5-logo-svg-1.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/css-3.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/javascript-2.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/wordpress-icon.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/woocommerce.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/prestashop.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/git.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/docker.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/postman.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/cpanel.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/ovi%20panel.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/canva-wordmark-2.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/meta-3.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/google-ads-2.svg"></div>
+                            <div class="fluid-node"><img src="assets/images/instagram-2016-5.svg"></div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 3: Organized Grid -->
+                    <div class="organized-tech-grid" id="organized-grid">
+                        <div class="tech-category">
+                            <h4 class="glow-title">Backend</h4>
+                            <div class="cat-nodes">
+                                <div class="cat-node"><img src="assets/images/python-5.svg"><span
+                                        class="reveal-text">Python</span></div>
+                                <div class="cat-node"><img src="assets/images/django.svg"><span
+                                        class="reveal-text">Django</span></div>
+                                <div class="cat-node"><img src="assets/images/laravel-2.svg"><span
+                                        class="reveal-text">Laravel</span></div>
+                                <div class="cat-node"><img src="assets/images/php-6.svg"><span
+                                        class="reveal-text">PHP</span></div>
+                                <div class="cat-node"><img src="assets/images/nodejs-1.svg"><span
+                                        class="reveal-text">Node.js</span></div>
+                                <div class="cat-node"><img src="assets/images/mysql-logo-pure.svg"><span
+                                        class="reveal-text">MySQL</span></div>
+                            </div>
+                        </div>
+
+                        <div class="tech-category">
+                            <h4 class="glow-title">Automation & AI</h4>
+                            <div class="cat-nodes">
+                                <div class="cat-node"><img src="assets/images/n8n%20logo.svg"><span
+                                        class="reveal-text">n8n</span></div>
+                                <div class="cat-node"><img src="assets/images/make.com.svg"><span
+                                        class="reveal-text">Make.com</span></div>
+                                <div class="cat-node"><img src="assets/images/exotel.svg"><span
+                                        class="reveal-text">Exotel</span></div>
+                                <div class="cat-node"><img src="assets/images/millis%20ai.svg"><span
+                                        class="reveal-text">Millis AI</span></div>
+                                <div class="cat-node"><img src="assets/images/eleven%20labs.svg"><span
+                                        class="reveal-text">ElevenLabs</span></div>
+                                <div class="cat-node"><img src="assets/images/webhooks.svg"><span
+                                        class="reveal-text">Webhooks</span></div>
+                                <div class="cat-node"><span>REST APIs</span></div>
+                            </div>
+                        </div>
+
+                        <div class="tech-category">
+                            <h4 class="glow-title">Frontend & CMS</h4>
+                            <div class="cat-nodes">
+                                <div class="cat-node"><img src="assets/images/html-5-logo-svg-1.svg"><span
+                                        class="reveal-text">HTML5</span></div>
+                                <div class="cat-node"><img src="assets/images/css-3.svg"><span
+                                        class="reveal-text">CSS3</span></div>
+                                <div class="cat-node"><img src="assets/images/javascript-2.svg"><span
+                                        class="reveal-text">JavaScript</span></div>
+                                <div class="cat-node"><img src="assets/images/wordpress-icon.svg"><span
+                                        class="reveal-text">WordPress</span></div>
+                                <div class="cat-node"><img src="assets/images/woocommerce.svg"><span
+                                        class="reveal-text">WooCommerce</span></div>
+                                <div class="cat-node"><img src="assets/images/prestashop.svg"><span
+                                        class="reveal-text">PrestaShop</span></div>
+                            </div>
+                        </div>
+
+                        <div class="tech-category">
+                            <h4 class="glow-title">Tools</h4>
+                            <div class="cat-nodes">
+                                <div class="cat-node"><img src="assets/images/git.svg"><span
+                                        class="reveal-text">Git</span></div>
+                                <div class="cat-node"><img src="assets/images/docker.svg"><span
+                                        class="reveal-text">Docker</span></div>
+                                <div class="cat-node"><img src="assets/images/postman.svg"><span
+                                        class="reveal-text">Postman</span></div>
+                                <div class="cat-node"><img src="assets/images/cpanel.svg"><span
+                                        class="reveal-text">cPanel</span></div>
+                                <div class="cat-node"><img src="assets/images/ovi%20panel.svg"><span
+                                        class="reveal-text">OVI Panel</span></div>
+                            </div>
+                        </div>
+
+                        <div class="tech-category">
+                            <h4 class="glow-title">Marketing</h4>
+                            <div class="cat-nodes">
+                                <div class="cat-node"><img src="assets/images/canva-wordmark-2.svg"><span
+                                        class="reveal-text">Canva</span></div>
+                                <div class="cat-node"><img src="assets/images/meta-3.svg"><span class="reveal-text">Meta
+                                        Ads</span></div>
+                                <div class="cat-node"><img src="assets/images/google-ads-2.svg"><span
+                                        class="reveal-text">Google Ads</span></div>
+                                <div class="cat-node"><img src="assets/images/instagram-2016-5.svg"><span
+                                        class="reveal-text">Instagram</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- 6. SERVICES (HOVER EXPAND ACCORDION) -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header reveal-up" style="text-align: center; margin-bottom: 50px;">
+                <div class="section-badge"
+                    style="background: rgba(6,182,212,0.1); border-color: rgba(6,182,212,0.3); color: #06b6d4;">WHAT I
+                    DO</div>
+                <h2 class="section-title">Solutions That Make Your<br><span style="color: #06b6d4;">Business Work</span>
+                    <span style="color: #ec4899;">Harder</span>
+                </h2>
+                <p style="color: rgba(255,255,255,0.6); margin-top: 15px; font-size: 1.1rem;">Less manual work. More
+                    revenue. Here's exactly how I help.</p>
+            </div>
+
+            <div class="hover-expand-container reveal-up" id="hover-expand-group">
+
+                <!-- Card 1 -->
+                <div class="he-item active" onmouseenter="activateHe(this)">
+                    <img src="assets/images/service_1.png" class="he-bg" alt="Automation & AI">
+                    <div class="he-collapsed">
+                        <span class="he-vert-text">01 / AUTOMATION & AI</span>
+                    </div>
+                    <div class="he-content-box">
+                        <div class="he-content-inner">
+                            <div class="he-header">
+                                <div class="he-icon"
+                                    style="color: #0FA4AF; border-color: rgba(15,164,175,0.3); background: rgba(15,164,175,0.1);">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </div>
+                                <div>
+                                    <div class="he-category ml15" style="--cat-color: #0FA4AF;"><span
+                                            class="word">AUTOMATION</span> <span class="word">&amp;</span> <span
+                                            class="word">AI</span></div>
+                                    <h3 class="he-title">Stop Doing Work Your Computer Can Do</h3>
+                                </div>
+                            </div>
+                            <p class="he-desc">If you do the same task more than twice a week, I automate it.</p>
+
+                            <div class="he-ba-box">
+                                <div class="he-ba-row"><span class="he-ba-label">BEFORE:</span> <span class="he-ba-text"
+                                        style="color: rgba(255,255,255,0.8);">Manually copying leads, sending
+                                        follow-ups, updating spreadsheets every day</span></div>
+                                <div class="he-ba-row"><span class="he-ba-label" style="color: #0FA4AF;">AFTER:</span>
+                                    <span class="he-ba-text text-white">Everything runs automatically while you focus on
+                                        growing</span>
+                                </div>
+                            </div>
+
+                            <ul class="he-bullets" style="--bullet-color: #0FA4AF;">
+                                <li>Saves 10–20 hrs/week</li>
+                                <li>Zero missed follow-ups</li>
+                                <li>Works 24/7, no breaks</li>
+                                <li>Scales as you grow</li>
+                            </ul>
+
+                            <div class="he-footer">
+                                <a href="#contact" class="he-cta" style="color: #0FA4AF;">Automate my business <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                                <div class="he-badge"
+                                    style="color: #0FA4AF; border-color: rgba(15,164,175,0.3); background: rgba(15,164,175,0.1);">
+                                    <i class='fa-solid fa-fire'></i> Most Popular
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="he-item" onmouseenter="activateHe(this)">
+                    <img src="assets/images/service_2.png" class="he-bg" alt="Web Apps">
+                    <div class="he-collapsed">
+                        <span class="he-vert-text">02 / WEB APPS</span>
+                    </div>
+                    <div class="he-content-box">
+                        <div class="he-content-inner">
+                            <div class="he-header">
+                                <div class="he-icon"
+                                    style="color: #06b6d4; border-color: rgba(6,182,212,0.3); background: rgba(6,182,212,0.1);">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                                <div>
+                                    <div class="he-category ml15" style="--cat-color: #06b6d4;"><span
+                                            class="word">WEB</span> <span class="word">APPLICATIONS</span></div>
+                                    <h3 class="he-title">Your Business, Managed in One Place</h3>
+                                </div>
+                            </div>
+                            <p class="he-desc">A custom dashboard built exactly for how your business works.</p>
+
+                            <div class="he-ba-box">
+                                <div class="he-ba-row"><span class="he-ba-label">BEFORE:</span> <span class="he-ba-text"
+                                        style="color: rgba(255,255,255,0.8);">Juggling WhatsApp, Excel sheets, and
+                                        different apps to track your business</span></div>
+                                <div class="he-ba-row"><span class="he-ba-label" style="color: #06b6d4;">AFTER:</span>
+                                    <span class="he-ba-text text-white">One clean dashboard. Every order, customer and
+                                        report — right there</span>
+                                </div>
+                            </div>
+
+                            <ul class="he-bullets" style="--bullet-color: #06b6d4;">
+                                <li>Everything in one screen</li>
+                                <li>Live data, always fresh</li>
+                                <li>Built for your team</li>
+                                <li>Access from anywhere</li>
+                            </ul>
+
+                            <div class="he-footer">
+                                <a href="#contact" class="he-cta" style="color: #06b6d4;">Build my dashboard <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                                <div class="he-badge"
+                                    style="color: #06b6d4; border-color: rgba(6,182,212,0.3); background: rgba(6,182,212,0.1);">
+                                    <i class="fa-solid fa-rocket"></i> High Impact
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="he-item" onmouseenter="activateHe(this)">
+                    <img src="assets/images/service_3.png" class="he-bg" alt="Websites & eCommerce">
+                    <div class="he-collapsed">
+                        <span class="he-vert-text">03 / WEBSITES</span>
+                    </div>
+                    <div class="he-content-box">
+                        <div class="he-content-inner">
+                            <div class="he-header">
+                                <div class="he-icon"
+                                    style="color: #fbbf24; border-color: rgba(251,191,36,0.3); background: rgba(251,191,36,0.1);">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                                <div>
+                                    <div class="he-category ml15" style="--cat-color: #fbbf24;"><span
+                                            class="word">WEBSITES</span> <span class="word">&amp;</span> <span
+                                            class="word">ECOMMERCE</span></div>
+                                    <h3 class="he-title">Your First Impression Is Online — Make It Count</h3>
+                                </div>
+                            </div>
+                            <p class="he-desc">Professional websites that turn visitors into paying customers.</p>
+
+                            <div class="he-ba-box">
+                                <div class="he-ba-row"><span class="he-ba-label">BEFORE:</span> <span class="he-ba-text"
+                                        style="color: rgba(255,255,255,0.8);">No website, or an outdated one that loses
+                                        customers before they even call you</span></div>
+                                <div class="he-ba-row"><span class="he-ba-label" style="color: #fbbf24;">AFTER:</span>
+                                    <span class="he-ba-text text-white">A fast, professional site that builds trust and
+                                        brings leads while you sleep</span>
+                                </div>
+                            </div>
+
+                            <ul class="he-bullets" style="--bullet-color: #fbbf24;">
+                                <li>More leads & enquiries</li>
+                                <li>Sell online 24/7</li>
+                                <li>Looks great on mobile</li>
+                                <li>Fast & SEO-ready</li>
+                            </ul>
+
+                            <div class="he-footer">
+                                <a href="#contact" class="he-cta" style="color: #fbbf24;">Get my website <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                                <div class="he-badge"
+                                    style="color: #fbbf24; border-color: rgba(251,191,36,0.3); background: rgba(251,191,36,0.1);">
+                                    <i class='fa-solid fa-chart-line'></i> Trending
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="he-item" onmouseenter="activateHe(this)">
+                    <img src="assets/images/service_4.png" class="he-bg" alt="Branding & Design">
+                    <div class="he-collapsed">
+                        <span class="he-vert-text">04 / BRANDING</span>
+                    </div>
+                    <div class="he-content-box">
+                        <div class="he-content-inner">
+                            <div class="he-header">
+                                <div class="he-icon"
+                                    style="color: #ec4899; border-color: rgba(236,72,153,0.3); background: rgba(236,72,153,0.1);">
+                                    <i class="fa-solid fa-palette"></i>
+                                </div>
+                                <div>
+                                    <div class="he-category ml15" style="--cat-color: #ec4899;"><span
+                                            class="word">BRANDING</span> <span class="word">&amp;</span> <span
+                                            class="word">DESIGN</span></div>
+                                    <h3 class="he-title">Look Like the Business You're Trying to Become</h3>
+                                </div>
+                            </div>
+                            <p class="he-desc">Your brand is the reason clients choose you over the competition.</p>
+
+                            <div class="he-ba-box">
+                                <div class="he-ba-row"><span class="he-ba-label">BEFORE:</span> <span class="he-ba-text"
+                                        style="color: rgba(255,255,255,0.8);">Generic logo, inconsistent social posts,
+                                        and designs that don't feel like a real brand</span></div>
+                                <div class="he-ba-row"><span class="he-ba-label" style="color: #ec4899;">AFTER:</span>
+                                    <span class="he-ba-text text-white">A complete, consistent identity that makes your
+                                        business look premium everywhere</span>
+                                </div>
+                            </div>
+
+                            <ul class="he-bullets" style="--bullet-color: #ec4899;">
+                                <li>Memorable logo & identity</li>
+                                <li>Better social engagement</li>
+                                <li>Stand out instantly</li>
+                                <li>Consistent everywhere</li>
+                            </ul>
+
+                            <div class="he-footer">
+                                <a href="#contact" class="he-cta" style="color: #ec4899;">Design my brand <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                                <div class="he-badge"
+                                    style="color: #ec4899; border-color: rgba(236,72,153,0.3); background: rgba(236,72,153,0.1);">
+                                    <i class='fa-solid fa-star'></i> New & Fresh
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="section-divider"></div>
+    <!-- 7. WHY XENATRIX AI -->
+    <section class="manifesto-section" id="why-us">
+        <div class="manifesto-sticky-wrap">
+            <div class="manifesto-progress-track">
+                <div class="manifesto-progress-fill" id="manifesto-progress"></div>
+            </div>
+            <div class="manifesto-inner">
+                <div class="manifesto-badge-row">
+                    <h2 class="manifesto-title">Why <span class="gradient-text">Xenatrix AI</span></h2>
+                </div>
+                <audio id="manifesto-audio" preload="auto"></audio>
+                <div class="manifesto-lines" id="manifesto-lines">
+                    <div class="m-line" data-index="01" data-audio="assets/images/we are not cheap.mp3">We are not <span
+                            class="m-strike">cheap.</span></div>
+                    <div class="m-line" data-index="02" data-audio="assets/images/affordable.mp3">We are not <span
+                            class="m-strike">“affordable.”</span></div>
+                    <div class="m-line" data-index="03" data-audio="assets/images/We are not expensive.mp3">We are not
+                        <span class="m-strike">expensive.</span>
+                    </div>
+                    <div class="m-line m-highlight" data-index="04"
+                        data-audio="assets/images/We are the right solution for your business..mp3">We are the <span
+                            class="m-accent">right solution</span> for your business.</div>
+                    <div class="m-line" data-index="05" data-audio="assets/images/Every business is different..mp3">
+                        Every business is different.</div>
+                    <div class="m-line" data-index="06"
+                        data-audio="assets/images/We build solutions that match your specific needs.mp3">We build
+                        solutions that match <em>your</em> specific needs.</div>
+                    <div class="m-line m-highlight" data-index="07"
+                        data-audio="assets/images/We don’t focus on your budget first — we focus on your problem.mp3">
+                        We don’t focus on your budget first — <span class="m-accent">we focus on your problem.</span>
+                    </div>
+                    <div class="m-line m-sub" data-index="08"
+                        data-audio="assets/images/We don’t deliver low-quality work just to be cheap.mp3">We
+                        don’t deliver low-quality work just to be cheap.<br>We don’t reuse outdated ideas just to be
+                        affordable.<br>We don’t overcharge for work that doesn’t create real value.</div>
+                    <div class="m-line" data-index="09"
+                        data-audio="assets/images/Instead, we work closely on your challenges, build the right system, and help you scale.mp3">
+                        Instead, we work closely on your challenges, build the right system, and help you scale.</div>
+                    <div class="m-line m-highlight" data-index="10"
+                        data-audio="assets/images/You pay for what you actually get — a solution that works.mp3">
+                        You pay for what you <span class="m-accent">actually get</span> — a solution that works.</div>
+                    <div class="m-line" data-index="11"
+                        data-audio="assets/images/Because a project is only valuable when it solves a real problem.mp3">
+                        Because a project is only valuable when it solves a real problem.</div>
+                    <div class="m-line m-highlight" data-index="12"
+                        data-audio="assets/images/And that’s what we build — solutions that truly work.mp3">
+                        And that’s what we build — <span class="m-accent">solutions that truly work.</span></div>
+                </div>
+                <div class="manifesto-closing" id="manifesto-closing"
+                    data-audio="assets/images/That’s why Xenatrix AI is the right fit for you.mp3">
+                    <div class="m-closing-line"></div>
+                    <h2 class="m-final">That’s why <span class="gradient-text">Xenatrix AI</span> is the right fit for
+                        you.</h2>
+                    <div class="m-closing-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <!-- 7.5 LIVE DEMO CTA SECTION -->
+    <section class="section demo-cta-section" id="demo-trigger-section">
+        <div class="container reveal-up" style="text-align: center;">
+            <div class="section-badge">Live System</div>
+            <h2 class="section-title">Ready to see <span class="gradient-text">Automation</span> in action?</h2>
+            <p class="section-subtitle"
+                style="margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Skip the consultation. Experience a live workflow response right now through our interactive terminal
+                demo.
+            </p>
+            <button class="btn-demo-trigger" style="padding: 16px 40px; font-size: 15px;" onclick="openTerminalDemo()">
+                <span class="demo-dot"></span> Experience Automation Live →
+            </button>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ═══════════════════════════════════════
+         PRICING SECTION
+    ═══════════════════════════════════════ -->
+    <section class="section pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header reveal-up" style="text-align:center;margin-bottom:40px">
+                <div class="section-badge">Investment</div>
+                <h2 class="section-title">Simple, <span class="gradient-text">Transparent Pricing</span></h2>
+                <p class="section-subtitle typewriter-trigger"
+                    data-text="Every business is different. Click a service to see what's included."></p>
+            </div>
+
+            <!-- CURRENCY SWITCHER -->
+            <div class="pr-currency-wrap reveal-up">
+                <span class="curr-label">INR</span>
+                <label class="curr-switch">
+                    <input type="checkbox" id="curr-toggle">
+                    <span class="curr-slider"></span>
+                </label>
+                <span class="curr-label">USD</span>
+            </div>
+
+            <div class="pricing-grid reveal-center-group">
+
+                <!-- CARD 1: AUTOMATION -->
+                <div class="pr-card reveal-center-item" data-service="automation">
+                    <div class="pr-card-top">
+                        <div class="pr-icon" style="--ic:#0FA4AF"><i class="fa-solid fa-robot"></i></div>
+                        <div class="pr-card-label" style="--lc:#0FA4AF">Most Popular</div>
+                    </div>
+                    <h3 class="pr-title">Automation & AI Systems</h3>
+                    <p class="pr-hook">n8n workflows, AI voice bots, API integrations, lead systems</p>
+                    <div class="pr-price-row">
+                        <span class="pr-from">Starting from</span>
+                        <span class="pr-amount" data-base="5000" style="--ac:#0FA4AF">₹5,000</span>
+                    </div>
+                    <button class="pr-trigger" data-modal="automation" style="--bc:#0FA4AF">
+                        View Pricing Details <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <div class="pr-glow" style="--gc:rgba(15,164,175,0.15)"></div>
+                </div>
+
+                <!-- CARD 2: WEB APPS -->
+                <div class="pr-card reveal-center-item" data-service="webapps">
+                    <div class="pr-card-top">
+                        <div class="pr-icon" style="--ic:#8b5cf6"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="pr-card-label" style="--lc:#8b5cf6">High Impact</div>
+                    </div>
+                    <h3 class="pr-title">Custom Web Applications</h3>
+                    <p class="pr-hook">Admin panels, dashboards, portals, management systems</p>
+                    <div class="pr-price-row">
+                        <span class="pr-from">Starting from</span>
+                        <span class="pr-amount" data-base="10000" style="--ac:#8b5cf6">₹10,000</span>
+                    </div>
+                    <button class="pr-trigger" data-modal="webapps" style="--bc:#8b5cf6">
+                        View Pricing Details <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <div class="pr-glow" style="--gc:rgba(139,92,246,0.15)"></div>
+                </div>
+
+                <!-- CARD 3: WEBSITES -->
+                <div class="pr-card reveal-center-item" data-service="websites">
+                    <div class="pr-card-top">
+                        <div class="pr-icon" style="--ic:#f59e0b"><i class="fa-solid fa-globe"></i></div>
+                        <div class="pr-card-label" style="--lc:#f59e0b">Fast Delivery</div>
+                    </div>
+                    <h3 class="pr-title">Websites & ECommerce</h3>
+                    <p class="pr-hook">Business sites, landing pages, WordPress, PrestaShop stores</p>
+                    <div class="pr-price-row">
+                        <span class="pr-from">Starting from</span>
+                        <span class="pr-amount" data-base="5000" style="--ac:#f59e0b">₹5,000</span>
+                    </div>
+                    <button class="pr-trigger" data-modal="websites" style="--bc:#f59e0b">
+                        View Pricing Details <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <div class="pr-glow" style="--gc:rgba(245,158,11,0.15)"></div>
+                </div>
+
+                <!-- CARD 4: BRANDING -->
+                <div class="pr-card reveal-center-item" data-service="branding">
+                    <div class="pr-card-top">
+                        <div class="pr-icon" style="--ic:#ec4899"><i class="fa-solid fa-palette"></i></div>
+                        <div class="pr-card-label" style="--lc:#ec4899">Add-on</div>
+                    </div>
+                    <h3 class="pr-title">Branding & Design</h3>
+                    <p class="pr-hook">Logos, brand kits, social media creatives, posters</p>
+                    <div class="pr-price-row">
+                        <span class="pr-from">Starting from</span>
+                        <span class="pr-amount" data-base="500" style="--ac:#ec4899">₹500</span>
+                    </div>
+                    <button class="pr-trigger" data-modal="branding" style="--bc:#ec4899">
+                        View Pricing Details <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <div class="pr-glow" style="--gc:rgba(236,72,153,0.15)"></div>
+                </div>
+
+            </div>
+
+            <p class="pr-disclaimer reveal-up">
+                <i class="fa-solid fa-circle-info"></i> Prices are not fixed and may vary based on project complexity.
+            </p>
+
+            <!-- Custom quote strip -->
+            <div class="pr-custom-strip reveal-up">
+                <div class="pr-custom-left">
+                    <i class="fa-solid fa-circle-nodes" style="color:#0FA4AF;font-size:20px"></i>
+                    <div>
+                        <p class="pr-custom-title">Need something bigger?</p>
+                        <p class="pr-custom-sub">Full business systems, enterprise automations, multi-phase builds —
+                            let's talk.</p>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-primary">Get a Custom Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         PRICING MODAL OVERLAY
+    ═══════════════════════════════════════ -->
+    <div class="pr-overlay" id="pr-overlay"></div>
+    <div class="pr-modal" id="pr-modal">
+        <button class="pr-modal-close" id="pr-modal-close"><i class="fa-solid fa-xmark"></i></button>
+        <div class="pr-modal-inner" id="pr-modal-inner">
+            <!-- content injected by JS -->
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 6.5 PROCESS SECTION (DYNAMIC ORBITAL REVEAL) -->
+    <section class="section process-section" id="process">
+        <div class="process-header reveal-up">
+            <div class="section-badge">Our Onboarding Process</div>
+            <h2>From First Hello to<br><span class="gradient-text">Live System</span></h2>
+            <p>Five stages. Zero confusion. One working product at the end.</p>
+        </div>
+        <div class="orbit-canvas" id="orbitCanvas">
+            <!-- Outer rings initially hidden -->
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+
+            <!-- SVG Connecting Lines & Arrows -->
+            <svg class="orbit-svg" id="orbitSvg" viewBox="0 0 500 500"></svg>
+
+            <!-- Center inner circle -->
+            <div class="orb-wrap" id="innerCircle">
+                <div class="orb-pulse-2"></div>
+                <div class="orb-pulse"></div>
+                <button class="orb-btn" id="mainButton">
+                    <i class="fa-solid fa-circle-nodes orb-icon"></i>
+                    <span class="orb-label">Tap to explore<br>our process</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Details Panel -->
+        <div class="detail-panel reveal-up" id="detailPanel">
+            <div class="dp-top">
+                <span class="dp-num" id="dpNum"></span>
+                <span class="dp-title" id="dpTitle"></span>
+            </div>
+            <p class="dp-desc" id="dpDesc"></p>
+            <div class="dp-dots" id="dpDots"></div>
+        </div>
+
+        <p class="process-hint reveal-up" id="processHint">
+            <i class="fa-solid fa-hand-pointer" style="color:#06b6d4"></i>
+            Tap the circle to explore the process
+        </p>
+
+        <div class="process-cta reveal-up" style="text-align: center; margin-top: 60px;">
+            <a href="#contact" class="btn btn-primary">Start Your Evolution Today</a>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- 8. FAQ SECTION -->
+    <section class="faq-section" id="faq">
+        <div class="faq-inner">
+            <div class="faq-header reveal-up">
+                <div class="section-badge">Common Questions</div>
+                <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+                <p>Everything you need to know about our AI systems and automation process.</p>
+            </div>
+
+            <div class="faq-bot-bar reveal-up">
+                <div class="bot-avatar">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="bot-intro">
+                    <strong>Xenatrix Support Bot</strong>
+                    <span>Ask me anything about my services</span>
+                </div>
+                <div class="bot-status">
+                    <span class="status-dot"></span>
+                    Online
+                </div>
+            </div>
+
+            <div class="faq-list">
+                <!-- Q1 -->
+                <div class="faq-item reveal-up">
+                    <div class="faq-q">
+                        <span class="faq-q-text">What exactly is AI Automation?</span>
+                        <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer-wrap">
+                        <div class="faq-answer-content">
+                            <div class="faq-typing-line">
+                                <div class="faq-mini-av"><i class="fa-solid fa-robot"></i></div>
+                                <div class="faq-answer-text"
+                                    data-text="AI Automation involves using tools like n8n or Make combined with AI models (GPT-4, Claude) to handle repetitive tasks—like lead sorting, data entry, or customer support—without human intervention.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="faq-item reveal-up">
+                    <div class="faq-q">
+                        <span class="faq-q-text">Do I need technical knowledge to use your systems?</span>
+                        <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer-wrap">
+                        <div class="faq-answer-content">
+                            <div class="faq-typing-line">
+                                <div class="faq-mini-av"><i class="fa-solid fa-robot"></i></div>
+                                <div class="faq-answer-text"
+                                    data-text="Not at all. I build 'turnkey' solutions. You get a simple dashboard or a WhatsApp/Discord bot that you can interact with. I handle all the complex coding and API logic in the background.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="faq-item reveal-up">
+                    <div class="faq-q">
+                        <span class="faq-q-text">How long does a typical project take?</span>
+                        <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer-wrap">
+                        <div class="faq-answer-content">
+                            <div class="faq-typing-line">
+                                <div class="faq-mini-av"><i class="fa-solid fa-robot"></i></div>
+                                <div class="faq-answer-text"
+                                    data-text="Small automations (like a basic lead sorter) take 3-5 days. Complex enterprise systems or custom web apps usually take 2-4 weeks. I'll provide a precise timeline during our strategy call.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="faq-item reveal-up">
+                    <div class="faq-q">
+                        <span class="faq-q-text">Is my business data secure?</span>
+                        <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer-wrap">
+                        <div class="faq-answer-content">
+                            <div class="faq-typing-line">
+                                <div class="faq-mini-av"><i class="fa-solid fa-robot"></i></div>
+                                <div class="faq-answer-text"
+                                    data-text="Yes. I use industry-standard encryption and secure API practices. I never store your data on my own servers; it stays within your own accounts (like your Google Drive, Notion, or Airtable).">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="faq-item reveal-up">
+                    <div class="faq-q">
+                        <span class="faq-q-text">Do you offer ongoing support?</span>
+                        <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer-wrap">
+                        <div class="faq-answer-content">
+                            <div class="faq-typing-line">
+                                <div class="faq-mini-av"><i class="fa-solid fa-robot"></i></div>
+                                <div class="faq-answer-text"
+                                    data-text="Every project comes with 30 days of free support. After that, I offer maintenance packages to ensure your systems stay updated as APIs evolve.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- 9. CONTACT (ENHANCED TABBED) -->
+    <section class="section contact-section-enhanced" id="contact">
+        <!-- Animated background particles -->
+        <div class="contact-particles" id="contact-particles"></div>
+        <div class="contact-glow-orb contact-glow-1"></div>
+        <div class="contact-glow-orb contact-glow-2"></div>
+
+        <div class="container">
+            <div class="section-header reveal-up" style="text-align: center;">
+                <div class="section-badge">Get In Touch</div>
+                <h2 class="section-title">Let's Build Something <span class="gradient-text">That Works</span></h2>
+                <p class="section-subtitle">Tell me about your business challenge or book a meeting — I'll show you
+                    exactly how to solve it.</p>
+            </div>
+
+            <div class="contact-layout">
+                <!-- LEFT: CONTACT INFO -->
+                <div class="contact-info reveal-up">
+                    <div class="contact-info-list">
+                        <div class="contact-item contact-item-animated">
+                            <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:xenatrixai@gmail.com">xenatrixai@gmail.com</a>
+                            </div>
+                            <div class="contact-item-shine"></div>
+                        </div>
+                        <div class="contact-item whatsapp contact-item-animated">
+                            <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/917010233809" target="_blank">+91 7010233809 <span
+                                        class="pulse-dot"></span></a>
+                            </div>
+                            <div class="contact-item-shine"></div>
+                        </div>
+                        <div class="contact-item contact-item-animated">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Tiruppur, Tamil Nadu, India</p>
+                            </div>
+                            <div class="contact-item-shine"></div>
+                        </div>
+                    </div>
+
+                    <div class="availability-block">
+                        <h4><span class="pulse-dot"></span> Currently Available for New Projects</h4>
+                        <p>USUALLY REPLY WITHIN 2 HOURS ON WHATSAPP</p>
+                    </div>
+
+                    <!-- Quick connect -->
+                    <div class="quick-connect-row">
+                        <a href="https://wa.me/917010233809" target="_blank" class="quick-connect-btn qc-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                        <a href="mailto:xenatrixai@gmail.com" class="quick-connect-btn qc-email">
+                            <i class="fa-regular fa-envelope"></i> Send Email
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RIGHT: TABBED FORM + CALENDAR -->
+                <div class="contact-form-wrapper reveal-up">
+                    <!-- Tab Navigation -->
+                    <div class="contact-tabs">
+                        <button class="contact-tab active" data-tab="tab-message" id="tab-btn-message">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Send Message</span>
+                            <div class="tab-indicator"></div>
+                        </button>
+                        <button class="contact-tab" data-tab="tab-calendar" id="tab-btn-calendar">
+                            <i class="fa-regular fa-calendar-check"></i>
+                            <span>Book a Meeting</span>
+                            <div class="tab-indicator"></div>
+                        </button>
+                        <div class="tab-slider" id="tab-slider"></div>
+                    </div>
+
+                    <!-- Tab Content: Send Message -->
+                    <div class="contact-tab-content active" id="tab-message">
+                        <form class="contact-form" id="contactForm">
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="cf-name" name="Name" class="form-input" placeholder=" " required>
+                                    <label for="cf-name" class="form-label">Full Name</label>
+                                    <div class="form-line"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="cf-email" name="Email" class="form-input" placeholder=" " required>
+                                    <label for="cf-email" class="form-label">Email Address</label>
+                                    <div class="form-line"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="tel" id="cf-phone" name="Phone" class="form-input" placeholder=" " required>
+                                    <label for="cf-phone" class="form-label">Phone / WhatsApp</label>
+                                    <div class="form-line"></div>
+                                </div>
+                                <div class="form-group">
+                                    <select id="cf-service" name="Service" class="form-select" required>
+                                        <option value="" disabled selected>Select a Service</option>
+                                        <option value="AI Automation">AI Automation</option>
+                                        <option value="Web Development">Web Development</option>
+                                        <option value="AI Voice Bot">AI Voice Bot</option>
+                                        <option value="Full System">Full Business System</option>
+                                        <option value="Branding & Design">Branding & Design</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <div class="form-line"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <select id="cf-budget" name="Budget" class="form-select" required>
+                                        <option value="" disabled selected>Project Budget Range</option>
+                                        <option value="Under ₹15,000">Under ₹15,000</option>
+                                        <option value="₹15K – ₹50K">₹15K – ₹50K</option>
+                                        <option value="₹50K – ₹1.5L">₹50K – ₹1.5L</option>
+                                        <option value="₹1.5L+">₹1.5L+</option>
+                                    </select>
+                                    <div class="form-line"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="cf-company" name="Company" class="form-input" placeholder=" ">
+                                    <label for="cf-company" class="form-label">Company Name (Optional)</label>
+                                    <div class="form-line"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="cf-message" name="Message" class="form-input" placeholder=" " required></textarea>
+                                <label for="cf-message" class="form-label">Project Details & Challenge</label>
+                                <div class="form-line"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit contact-submit-btn" id="submitBtn">
+                                <span class="btn-text">Send <i class="fa-solid fa-paper-plane right"></i></span>
+                                <span class="btn-loading" style="display:none;"><i class="fa-solid fa-circle-notch fa-spin"></i> Sending...</span>
+                                <span class="btn-success" style="display:none;"><i class="fa-solid fa-check"></i> Sent!</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- ✅ Confirmation Popup Modal -->
+                    <div id="leadPopup" class="lead-popup-overlay" style="display:none;">
+                        <div class="lead-popup-card">
+                            <div class="lead-popup-header">
+                                <div class="lead-popup-icon"><i class="fa-solid fa-paper-plane"></i></div>
+                                <h3>Ready to Send!</h3>
+                                <p>Review your details before sending to <strong>xenatrixai@gmail.com</strong></p>
+                            </div>
+                            <div class="lead-popup-details" id="leadPopupDetails"></div>
+                            <div class="lead-popup-actions">
+                                <button class="lead-popup-send" id="popupSendBtn">
+                                    <i class="fa-brands fa-google"></i> Send via Gmail
+                                </button>
+                                <button class="lead-popup-close" id="popupCloseBtn">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content: Calendar -->
+                    <div class="contact-tab-content" id="tab-calendar">
+                        <div class="calendar-intro">
+                            <div class="calendar-intro-icon">
+                                <i class="fa-regular fa-calendar-check"></i>
+                            </div>
+                            <h3>Book a Free Strategy Call</h3>
+                            <p>Pick a time that works for you. The meeting will automatically appear in both our calendars.</p>
+                        </div>
+                        <div class="calendly-embed-wrapper" id="calendly-wrapper">
+                            <!-- Calendly inline widget -->
+                            <div class="calendly-inline-widget" data-url="https://calendly.com/xenatrixai/30min?hide_gdpr_banner=1&background_color=0a0a14&text_color=e0e0e0&primary_color=0fa4af" style="min-width:100%;height:650px;"></div>
+                        </div>
+                        <div class="calendar-fallback">
+                            <p>Can't see the calendar? <a href="https://calendly.com/xenatrixai/30min" target="_blank" rel="noopener">Click here to book directly →</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. FOOTER -->
+    <footer class="footer footer-new">
+        <!-- Glow orbs -->
+        <div class="footer-orb footer-orb-1"></div>
+        <div class="footer-orb footer-orb-2"></div>
+
+        <div class="container">
+            <!-- BIG CTA HEADLINE -->
+            <div class="footer-cta-block">
+                <p class="footer-eyebrow">Ready to scale?</p>
+                <h2 class="footer-mega-title">Let's Build<br><span class="footer-gradient-text">Something Real.</span></h2>
+                <p class="footer-cta-sub">Automation · AI Systems · Web · Voice Bots</p>
+                <div class="footer-cta-btns">
+                    <a href="#contact" class="footer-btn-primary">
+                        <i class="fa-solid fa-rocket"></i> Start a Project
+                    </a>
+                    <a href="https://wa.me/917010233809" target="_blank" class="footer-btn-wa">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Me
+                    </a>
+                </div>
+            </div>
+
+            <!-- DIVIDER WITH TAGLINE MARQUEE -->
+            <div class="footer-marquee-wrap">
+                <div class="footer-marquee-track">
+                    <span>Simplify Today</span><span class="footer-dot">✦</span>
+                    <span>Scale Tomorrow</span><span class="footer-dot">✦</span>
+                    <span>AI Automation</span><span class="footer-dot">✦</span>
+                    <span>Web Systems</span><span class="footer-dot">✦</span>
+                    <span>Voice Bots</span><span class="footer-dot">✦</span>
+                    <span>Xenatrix AI</span><span class="footer-dot">✦</span>
+                    <span>Simplify Today</span><span class="footer-dot">✦</span>
+                    <span>Scale Tomorrow</span><span class="footer-dot">✦</span>
+                    <span>AI Automation</span><span class="footer-dot">✦</span>
+                    <span>Web Systems</span><span class="footer-dot">✦</span>
+                </div>
+            </div>
+
+            <!-- LINKS GRID -->
+            <div class="footer-links-grid">
+                <!-- Brand -->
+                <div class="footer-brand-col">
+                    <img src="assets/images/logo_2.png" alt="Xenatrix AI" class="footer-logo-img">
+                    <p class="footer-brand-tagline">"Simplify Today.<br>Scale Tomorrow."</p>
+                    <p class="footer-brand-location"><i class="fa-solid fa-location-dot"></i> Tiruppur, Tamil Nadu, India</p>
+                </div>
+
+                <!-- Nav -->
+                <div class="footer-nav-col">
+                    <h5 class="footer-col-title">Navigate</h5>
+                    <ul class="footer-nav-list">
+                        <li><a href="#featured"><i class="fa-solid fa-angle-right"></i> Projects</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+                        <li><a href="#process"><i class="fa-solid fa-angle-right"></i> Process</a></li>
+                        <li><a href="#pricing"><i class="fa-solid fa-angle-right"></i> Pricing</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-angle-right"></i> About</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-nav-col">
+                    <h5 class="footer-col-title">Services</h5>
+                    <ul class="footer-nav-list">
+                        <li><a href="#services"><i class="fa-solid fa-angle-right"></i> AI Automation</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Web Development</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Voice Bots</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-angle-right"></i> CRM Systems</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Branding</a></li>
+                    </ul>
+                </div>
+
+                <!-- Socials -->
+                <div class="footer-social-col">
+                    <h5 class="footer-col-title">Connect</h5>
+                    <div class="footer-social-icons">
+                        <a href="https://wa.me/917010233809" target="_blank" class="fsi fsi-wa" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/balaji-s-982341284" target="_blank" class="fsi fsi-li" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:xenatrixai@gmail.com" class="fsi fsi-em" aria-label="Email">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="fsi fsi-gh" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <p class="footer-contact-direct">
+                        <i class="fa-solid fa-phone"></i> +91 7010233809
+                    </p>
+                    <p class="footer-contact-direct">
+                        <i class="fa-regular fa-envelope"></i> xenatrixai@gmail.com
+                    </p>
+                </div>
+            </div>
+
+            <!-- BOTTOM BAR -->
+            <div class="footer-bottom-new">
+                <p class="footer-copy">© 2026 <span>Xenatrix AI</span> — Built by Balaji S.</p>
+                <p class="footer-rights">All rights reserved. Made with <i class="fa-solid fa-heart" style="color:#ec4899;font-size:0.8rem;"></i> in Tamil Nadu</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- IMAGE LIGHTBOX MODAL -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close"><i class="fa-solid fa-xmark"></i></span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <!-- Calendly Widget -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- TERMINAL DEMO PANEL -->
+    <div class="terminal-overlay" id="terminal-overlay" onclick="closeTerminalDemo()"></div>
+    <div class="terminal-panel" id="terminal-panel">
+        <div class="terminal-header">
+            <div class="terminal-dots">
+                <span class="tdot tdot-red"></span>
+                <span class="tdot tdot-yellow"></span>
+                <span class="tdot tdot-green"></span>
+            </div>
+            <span class="terminal-title">xenatrix@automation: ~/live-demo</span>
+            <button class="terminal-close" onclick="closeTerminalDemo()">&times;</button>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+            <div class="terminal-typewriter" id="terminal-typewriter"></div>
+            <div class="terminal-form" id="terminal-form" style="display:none;">
+                <p class="terminal-form-title">Run the Demo — See automation respond to you in real-time.</p>
+                <div class="tfield"><label>&gt; your_name:</label><input type="text" id="tf-name"
+                        placeholder="e.g. Balaji" autocomplete="off"></div>
+                <div class="tfield"><label>&gt; business_name:</label><input type="text" id="tf-business"
+                        placeholder="e.g. Xenatrix AI Agency" autocomplete="off"></div>
+                <div class="tfield"><label>&gt; industry:</label><input type="text" id="tf-industry"
+                        placeholder="e.g. Automation, Restaurant, Retail" autocomplete="off"></div>
+                <div class="tfield"><label>&gt; phone_number:</label><input type="tel" id="tf-phone"
+                        placeholder="10-digit WhatsApp number" autocomplete="off"></div>
+                <div class="tfield"><label>&gt; email_address:</label><input type="email" id="tf-email"
+                        placeholder="you@yourbusiness.com" autocomplete="off"></div>
+                <button class="terminal-submit" id="terminal-submit" onclick="submitTerminalDemo()">
+                    <span class="tsub-text">[ RUN AUTOMATION → ]</span>
+                    <span class="tsub-loading" style="display:none;">[ RUNNING... <span class="tdots-anim">●</span>
+                        <span class="tdots-anim">●</span> <span class="tdots-anim">●</span> ]</span>
+                    <div class="tsub-progress"></div>
+                </button>
+            </div>
+            <div class="terminal-success" id="terminal-success" style="display:none;"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
