@@ -1408,8 +1408,7 @@ function submitTerminalDemo() {
     // Use the correct n8n webhook URL
     var webhookUrl = 'https://n8n-production-7a00b.up.railway.app/webhook/rynex-demo';
     
-    console.log('Sending to n8n webhook:', webhookUrl);
-    console.log('Payload:', payload);
+
 
     fetch(webhookUrl, {
         method: 'POST',
@@ -1420,21 +1419,20 @@ function submitTerminalDemo() {
         body: JSON.stringify(payload)
     })
         .then(function (res) {
-            console.log('Response status:', res.status);
+
             if (!res.ok) {
                 throw new Error('HTTP ' + res.status + ': ' + res.statusText);
             }
             return res.json().catch(function () { 
-                console.log('Response received but no JSON body');
                 return { success: true }; 
             });
         })
         .then(function (data) {
-            console.log('Success response:', data);
+
             showTerminalSuccess();
         })
         .catch(function (error) {
-            console.error('Webhook error:', error);
+
             showTerminalError(error.message);
         });
 }
@@ -1986,7 +1984,7 @@ function openPricingModal(key) {
         <div class="pm-note">ℹ️ ${d.note}</div>
         <div class="pm-cta">
             <a href="#contact" class="pm-btn-primary" onclick="closePricingModal()">Get a Quote for This →</a>
-            <a href="https://wa.me/917010233809" target="_blank" class="pm-btn-secondary"><i class="fa-brands fa-whatsapp"></i> Ask on WhatsApp</a>
+            <a href="https://wa.me/917010233809" target="_blank" rel="noopener noreferrer" class="pm-btn-secondary"><i class="fa-brands fa-whatsapp"></i> Ask on WhatsApp</a>
         </div>
     `;
 
