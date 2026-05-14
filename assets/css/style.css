@@ -1025,6 +1025,7 @@ html.lenis body {
 .bento-reveal {
   opacity: 0;
   transform: translateY(40px);
+  will-change: transform, opacity;
 }
 
 .bento-card-project:hover {
@@ -3270,7 +3271,8 @@ html.lenis body {
 /* --- MY STORY SECTION --- */
 .photo-container {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: 100%;
 }
 
 .photo-badge {
@@ -3958,6 +3960,33 @@ textarea.form-input {
   color: rgba(255,255,255,0.35);
 }
 .footer-copy span { color: #0FA4AF; font-weight: 600; }
+
+.footer-legal-links {
+  display: flex;
+  gap: 24px;
+  margin-left: 40px;
+}
+.footer-legal-links a {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.footer-legal-links a:hover {
+  color: var(--accent-primary);
+}
+
+@media (max-width: 768px) {
+  .footer-bottom-new {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer-legal-links {
+    margin-left: 0;
+    gap: 20px;
+  }
+}
 .footer-rights {
   font-size: 0.85rem;
   color: rgba(255,255,255,0.25);
@@ -3971,6 +4000,7 @@ textarea.form-input {
 .reveal-up {
   opacity: 0;
   transform: translateY(50px);
+  will-change: transform, opacity;
 }
 
 /* MOBILE RESPONSIVE RULES */
@@ -6051,7 +6081,7 @@ em {
 
 /* ── DYNAMIC ORBITAL PROCESS ── */
 .process-section {
-  padding: 120px 20px;
+  padding: 80px 20px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -7101,7 +7131,7 @@ em {
 
 /* ── PRICING SECTION ── */
 .pricing-section {
-  padding: 100px 0;
+  padding: 60px 0;
   position: relative;
   overflow: hidden;
 }
@@ -8438,7 +8468,7 @@ h2+.section-subtitle,
   }
 
   .about-photo-wrapper {
-    max-width: 280px !important;
+    max-width: 340px !important;
     margin: 0 auto !important;
   }
 

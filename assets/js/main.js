@@ -2,14 +2,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. LENIS SMOOTH SCROLL
     const lenis = new Lenis({
-        duration: 1.2,
+        duration: 1.5,
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        direction: 'vertical',
-        gestureDirection: 'vertical',
-        smooth: true,
-        mouseMultiplier: 1,
+        orientation: 'vertical',
+        gestureOrientation: 'vertical',
+        smoothWheel: true,
+        wheelMultiplier: 1,
         smoothTouch: false,
         touchMultiplier: 2,
+        infinite: false,
     });
 
     function raf(time) {
@@ -74,17 +75,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         gsap.to('.hero-title .word span', {
             y: 0,
-            duration: 0.8,
-            stagger: 0.07,
-            ease: "power4.out"
+            duration: 1,
+            stagger: 0.1,
+            ease: "expo.out"
         });
 
         gsap.to('.hero .reveal-up:not(.hero-title)', {
             y: 0,
             opacity: 1,
-            duration: 0.8,
-            stagger: 0.1,
-            ease: "power4.out",
+            duration: 1,
+            stagger: 0.15,
+            ease: "expo.out",
             onComplete: () => {
                 // Add floating animation to stats after they reveal
                 document.querySelectorAll('.stat-item').forEach((item, index) => {
@@ -322,62 +323,50 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Mobile Menu
+    // Mobile Menu & Smooth Navigation
     const menuToggle = document.getElementById('menu-toggle');
     const navLinksContainer = document.getElementById('nav-links');
 
-    menuToggle.addEventListener('click', () => {
-        menuToggle.classList.toggle('active');
-        navLinksContainer.classList.toggle('active');
-    });
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            menuToggle.classList.remove('active');
-            navLinksContainer.classList.remove('active');
+    if (menuToggle && navLinksContainer) {
+        menuToggle.addEventListener('click', () => {
+            const isOpen = menuToggle.classList.toggle('active');
+            navLinksContainer.classList.toggle('active');
+            document.body.style.overflow = isOpen ? 'hidden' : '';
         });
-    });
+    }
 
-    // 8. TIKKA HOUSE TABS
-    const tabBtns = document.querySelectorAll('.fp-tab-btn');
-    const tabContents = document.querySelectorAll('.fp-tab-content');
+    // Smooth Scroll for all anchors
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href === '#' || !href.startsWith('#')) return;
+            
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                
+                // Close mobile menu
+                if (menuToggle) menuToggle.classList.remove('active');
+                if (navLinksContainer) navLinksContainer.classList.remove('active');
+                document.body.style.overflow = '';
 
-    tabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const target = btn.getAttribute('data-tab');
-
-            tabBtns.forEach(b => b.classList.remove('active'));
-            tabContents.forEach(c => c.classList.remove('active'));
-
-            btn.classList.add('active');
-            document.getElementById(target).classList.add('active');
-        });
-    });
-
-    // 9. PORTFOLIO FILTERING
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            const filter = btn.getAttribute('data-filter');
-
-            projectCards.forEach(card => {
-                if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                    card.style.display = 'flex';
-                    setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'scale(1)'; }, 50);
+                // Scroll with Lenis if available
+                if (lenis) {
+                    lenis.scrollTo(target, { 
+                        offset: -80, 
+                        duration: 1.2,
+                        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+                    });
                 } else {
-                    card.style.opacity = '0';
-                    card.style.transform = 'scale(0.95)';
-                    setTimeout(() => { card.style.display = 'none'; }, 300);
+                    target.scrollIntoView({ behavior: 'smooth' });
                 }
-            });
-            // Re-initialize ScrollTrigger after layout change
+            }
         });
     });
+
+
+
+
 
     // 10. GSAP SCROLLTRIGGER ANIMATIONS
 
@@ -391,8 +380,8 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             y: 0,
             opacity: 1,
-            duration: 0.8,
-            ease: "power4.out"
+            duration: 1.2,
+            ease: "expo.out"
         });
     });
 
@@ -400,17 +389,47 @@ document.addEventListener('DOMContentLoaded', () => {
     const statNumbers = document.querySelectorAll('.stat-number');
     statNumbers.forEach(stat => {
         const target = parseInt(stat.getAttribute('data-target'));
-        gsap.to(stat, {
-            scrollTrigger: {
-                trigger: stat,
-                start: "top 90%",
-            },
-            innerHTML: target,
-            duration: 1.2,
-            snap: { innerHTML: 1 },
-            ease: "power2.out"
-        });
+        
+        const runCounter = () => {
+            if (stat.classList.contains('counted')) return;
+            stat.classList.add('counted');
+            gsap.to(stat, {
+                innerHTML: target,
+                duration: 2,
+                snap: { innerHTML: 1 },
+                ease: "expo.out"
+            });
+        };
 
+        ScrollTrigger.create({
+            trigger: stat,
+            start: "top 95%",
+            onEnter: runCounter,
+            once: true
+        });
+    });
+
+    // Fire counter immediately for any stat already visible on load
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.stat-number').forEach(function(el) {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                // element is already in viewport — run counter now
+                const target = parseInt(el.getAttribute('data-target'));
+                let count = 0;
+                const duration = 1500;
+                const step = Math.ceil(target / (duration / 16));
+                const timer = setInterval(function() {
+                    count += step;
+                    if (count >= target) {
+                        count = target;
+                        clearInterval(timer);
+                    }
+                    el.textContent = count;
+                    el.classList.add('counted'); // Mark as counted to avoid GSAP trigger
+                }, 16);
+            }
+        });
     });
 
     // Scan line image reveals
@@ -603,11 +622,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // n8n background sync
             try {
+                console.log('Syncing contact lead to n8n...');
                 navigator.sendBeacon(
                     'https://n8n-production-7a00b.up.railway.app/webhook/rynex-demo',
                     new Blob([JSON.stringify({name,email,phone,service,budget,company,message,source:'portfolio'})], {type:'application/json'})
                 );
-            } catch(_) {}
+            } catch(e) {
+                console.warn('n8n sync failed:', e);
+            }
         });
     }
 
@@ -980,18 +1002,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
-    // 17. SERVICES ACCORDION
-    window.activateAccordion = function (index) {
-        const panels = document.querySelectorAll('.accordion-panel');
-        panels.forEach((panel, i) => {
-            if (i === index) {
-                panel.classList.add('active');
-            } else {
-                panel.classList.remove('active');
-            }
-        });
-    }
 });
 
 
@@ -1041,65 +1051,7 @@ function activateHe(element) {
     }
 }
 
-// Why Choose Us - 3D Perspective Scroll logic
-function initPerspectiveScroll() {
-    const perspectiveText = document.getElementById('perspective-text');
-    const scrollTrack = document.querySelector('.perspective-scroll-track');
 
-    if (perspectiveText && scrollTrack && typeof gsap !== 'undefined') {
-        gsap.registerPlugin(ScrollTrigger);
-
-        // Ensure initial visibility
-        gsap.set(perspectiveText, { opacity: 1 });
-
-        const mainTl = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".perspective-scroll-track",
-                start: "top top",
-                end: "bottom bottom",
-                scrub: 1.2,
-                invalidateOnRefresh: true
-            }
-        });
-
-        // 3D Tilt and Vertical movement
-        mainTl.fromTo(perspectiveText,
-            {
-                rotateX: 45,
-                y: "30vh",
-                z: -100
-            },
-            {
-                rotateX: -15,
-                y: "-50vh",
-                z: 50,
-                ease: "none"
-            }
-        );
-
-        // Individual line lighting effects
-        const lines = perspectiveText.querySelectorAll('.text-line');
-        lines.forEach((line) => {
-            gsap.to(line, {
-                scrollTrigger: {
-                    trigger: line,
-                    start: "top center+=20%",
-                    end: "bottom center-=20%",
-                    toggleClass: "is-active",
-                    scrub: true
-                }
-            });
-        });
-
-        ScrollTrigger.refresh();
-    }
-}
-
-// Re-init on load and critical changes
-window.addEventListener('load', () => {
-    setTimeout(initPerspectiveScroll, 200);
-});
-window.addEventListener('resize', initPerspectiveScroll);
 
 // 18. MANIFESTO — CLEAN SCROLL + AUDIO
 function initManifesto() {
@@ -1410,15 +1362,17 @@ function submitTerminalDemo() {
     
 
 
+
+
     fetch(webhookUrl, {
         method: 'POST',
         headers: { 
-            'Content-Type': 'application/json',
-            'User-Agent': 'Xenatrix-AI-Portfolio/1.0'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(payload)
     })
         .then(function (res) {
+
 
             if (!res.ok) {
                 throw new Error('HTTP ' + res.status + ': ' + res.statusText);

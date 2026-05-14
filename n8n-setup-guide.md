@@ -8,16 +8,17 @@
 - **Status**: ✅ Fixed - URLs now synchronized
 
 ### Integration Points
-1. **Terminal Demo Form** (index.html lines 1295-1324)
+1. **Terminal Demo Form** (index.html)
    - Collects: name, business, industry, phone, email
    - Sends to n8n webhook on submission
    - Shows success/error feedback
 
-2. **JavaScript Handler** (assets/js/main.js lines 1156-1243)
+2. **JavaScript Handler** (assets/js/main.js)
    - Validates input fields
    - Constructs payload with timestamp and source
    - Handles success/error responses
-   - Console logging for debugging
+   - Enhanced console logging for real-time debugging
+   - Uses optimized `fetch` for terminal and `sendBeacon` for contact form lead sync
 
 ### Payload Structure
 ```json
